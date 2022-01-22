@@ -4,6 +4,11 @@ ul {
     padding: 0;
 }
 
+p, button {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -11,4 +16,15 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.clearfloat {
+    zoom: 1;
+}
+
+.clearfloat::after {
+    display: block;
+    clear: both;
+    content: '';
+    visibility: hidden;
 }
